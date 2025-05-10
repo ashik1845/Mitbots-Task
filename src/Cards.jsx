@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./Cards.css"; // Import the corresponding CSS
+import "./Cards.css"; 
 
 const Cards = () => {
-  const [frontCard, setFrontCard] = useState(1); // Default active card
+  const [frontCard, setFrontCard] = useState(1);
 
   const handleCardClick = (index) => {
     setFrontCard(index);

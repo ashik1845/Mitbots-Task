@@ -8,7 +8,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden; 
 }
 
 .offer-section {
@@ -116,7 +116,7 @@ html, body {
   flex-shrink: 0;
 }
 
-/* Mobile Styles */
+
 @media (max-width: 1000px) {
   .offer-content {
     display: none;
@@ -128,8 +128,8 @@ html, body {
     align-items: center;
     width: 100vw;
     flex-direction: column;
-    overflow: visible; /* Allow overflow for animation */
-    position: relative; /* Ensure absolute children behave correctly */
+    overflow: visible; 
+    position: relative; 
   }
 
   .mobile-image-strip {
@@ -139,7 +139,7 @@ html, body {
     border-radius: 10px;
     box-shadow: 0 0 0 10px #afafaf;
     outline: 6px solid #393939;
-    overflow: visible; /* Allow cards to appear outside */
+    overflow: visible; 
     position: relative;
     display: flex;
     flex-direction: column;
@@ -153,7 +153,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: visible; /* Important: allow card overflow */
+    overflow: visible; 
   }
 
   .mobile-static-image img {
@@ -193,29 +193,29 @@ html, body {
 
   .mobile-card {
     position: absolute;
-    top: 70%; /* Adjust vertical position */
+    top: 70%;
     left: 50%;
-    width: 40vw; /* Larger card */
-    aspect-ratio: 1 / 1; /* Perfect square */
+    width: 40vw; 
+    aspect-ratio: 1 / 1; 
     padding: 20px;
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    transform: translate(100vw, -50%) scale(0.8); /* Start off-screen right */
+    transform: translate(100vw, -50%) scale(0.8); 
     opacity: 0;
     transition: transform 1.8s ease, opacity 1.8s ease;
     z-index: 1;
   }
 
   .mobile-card.enter {
-    transform: translate(-50%, -50%) scale(1); /* Move to center */
+    transform: translate(-50%, -50%) scale(1);
     opacity: 1;
     z-index: 2;
   }
 
   .mobile-card.exit {
-    transform: translate(-100vw, -50%) scale(0.3); /* Move out to left */
+    transform: translate(-100vw, -50%) scale(0.3);
     opacity: 0;
     z-index: 1;
   }
@@ -238,16 +238,16 @@ html, body {
 @media (max-width:750px){
     .mobile-card {
     position: absolute;
-    top: 50%; /* Adjust vertical position */
+    top: 50%; 
     left: 50%;
-    width: 50vw; /* Larger card */
-    aspect-ratio: 1 / 1; /* Perfect square */
+    width: 50vw; 
+    aspect-ratio: 1 / 1;
     padding: 40px;
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    transform: translate(100vw, -50%) scale(0.8); /* Start off-screen right */
+    transform: translate(100vw, -50%) scale(0.8); 
     opacity: 0;
     transition: transform 1.8s ease, opacity 1.8s ease;
     z-index: 1;
@@ -269,16 +269,15 @@ html, body {
   @media (max-width:600px){
     .mobile-card {
     position: absolute;
-    top: 50%; /* Adjust vertical position */
+    top: 50%; 
     left: 50%;
-    width: 50vw; /* Larger card */
-     /* Perfect square */
+    width: 50vw; 
     padding: 20px;
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    transform: translate(100vw, -50%) scale(0.8); /* Start off-screen right */
+    transform: translate(100vw, -50%) scale(0.8);
     opacity: 0;
     transition: transform 1.8s ease, opacity 1.8s ease;
     z-index: 1;
@@ -302,16 +301,15 @@ html, body {
   @media (max-width:500px){
     .mobile-card {
     position: absolute;
-    top: 50%; /* Adjust vertical position */
+    top: 50%; 
     left: 50%;
-    width: 45vw; /* Larger card */
-     /* Perfect square */
+    width: 45vw; 
     padding: 20px;
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    transform: translate(100vw, -50%) scale(0.8); /* Start off-screen right */
+    transform: translate(100vw, -50%) scale(0.8); 
     opacity: 0;
     transition: transform 1.8s ease, opacity 1.8s ease;
     z-index: 1;
@@ -334,16 +332,16 @@ html, body {
 @media (max-width:400px){
     .mobile-card {
     position: absolute;
-    top: 50%; /* Adjust vertical position */
+    top: 50%; 
     left: 50%;
-    width: 60vw; /* Larger card */
-    aspect-ratio: 1 / 1; /* Perfect square */
+    width: 60vw; 
+    aspect-ratio: 1 / 1;
     padding: 20px;
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    transform: translate(100vw, -50%) scale(0.8); /* Start off-screen right */
+    transform: translate(100vw, -50%) scale(0.8); 
     opacity: 0;
     transition: transform 1.8s ease, opacity 1.8s ease;
     z-index: 1;
@@ -369,6 +367,6 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: visible; /* Important: allow card overflow */
+    overflow: visible; 
   }
 }
