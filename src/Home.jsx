@@ -22,6 +22,13 @@ const Home = () => {
           See
         </button>
       </div>
+
+      <div className="section-row">
+        <h1 className="section-heading">Object moving</h1>
+        <button className="see-button" onClick={() => navigate("/object")}>
+          See
+        </button>
+      </div>
     </div>
   );
 };
