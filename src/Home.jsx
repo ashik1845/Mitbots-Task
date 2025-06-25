@@ -65,6 +65,13 @@ const Home = () => {
     See
   </button>
 </div>
+
+<div className="section-row">
+        <h1 className="section-heading">Text Animation</h1>
+        <button className="see-button" onClick={() => navigate("/text")}>
+          See
+        </button>
+      </div>
       
     </div>
   );

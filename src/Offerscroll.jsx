@@ -1,8 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./Offerscroll.css";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "swiper/css";
+import { ScrollTrigger } from "gsap/ScrollTrigger";import "swiper/css";
 
 import offer1 from "./assets/img1.png";
 import offer2 from "./assets/img2.png";
