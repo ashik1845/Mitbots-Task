@@ -1,10 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Home";
-import Cards from "./Cards";
-import Offerscroll from "./Offerscroll";
-import Object from "./Object";
-import Text from "./Text";
+import Home from "./components/Home";
+import Cards from "./components/Cards";
+import Offerscroll from "./components/Offerscroll";
+import Object from "./components/Object";
+import Text from "./components/Text";
+import DiffCards from "./components/DiffCards"
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/offerscroll" element={<Offerscroll />} />
         <Route path="/object" element={<Object />} />
         <Route path="/text" element={<Text />} />
+        <Route path="/diffcards" element={<DiffCards />} />
       </Routes>
     </Router>
   );
