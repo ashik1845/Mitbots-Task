@@ -1,0 +1,182 @@
+.parallax-container {
+  font-family: 'Helvetica Neue', sans-serif;
+  background: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+.section {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.section img {
+  position: absolute;
+  max-width: 60%;
+  height: auto;
+}
+
+.bg-text {
+  font-size: 10vw;
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  text-align: center;
+}
+
+.bottle-main {
+  top: 30%;
+  z-index: 2;
+  width: 75vw;
+  max-width: 750px;
+  height: auto;
+}
+
+.bottle-side {
+  left: 5%;
+  width: 40vw;
+  max-width: 300px;
+  position: absolute;
+  z-index: 4;
+}
+
+.text-side {
+  right: 5%;
+  position: absolute;
+  z-index: 4;
+  font-size: 1.8rem;
+  max-width: 500px;
+  text-align: right;
+  word-wrap: break-word;
+}
+
+.spacer {
+  height: 100vh;
+}
+
+.section-3 {
+  height: 100vh;
+  position: relative;
+  background: black;
+  overflow: hidden;
+}
+
+.final-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  transform: none !important;
+}
+
+.perfume-3,
+.perfume-4 {
+  position: absolute;
+  width: 25vw;
+  max-width: 300px;
+  height: auto;
+  transform-origin: center center;
+  z-index: 2;
+}
+
+.text-top-right,
+.text-bottom-right {
+  position: absolute;
+  right: 5%;
+  font-size: 1.5rem;
+  color: white;
+  opacity: 0;
+  z-index: 1;
+  max-width: 400px;
+  text-align: left;
+}
+
+.text-top-right {
+  top: 15%;
+}
+
+.text-bottom-right {
+  bottom: 15%;
+}
+
+.ghost-scroll {
+  height: 180vh;
+}
+
+@media(max-width:750px){
+    .text-side {
+  right: 5%;
+  position: absolute;
+  z-index: 4;
+  font-size: 1.5rem;
+  max-width: 300px;
+  text-align: right;
+  word-wrap: break-word;
+}
+.text-top-right,
+.text-bottom-right {
+  position: absolute;
+  right: 1%;
+  font-size: 1.3rem;
+  color: white;
+  opacity: 0;
+  z-index: 1;
+  max-width: 300px;
+  text-align: left;
+}
+}
+@media(max-width:480px){
+.bottle-main {
+  top: 30%;
+  z-index: 2;
+  width: 155vw;
+  min-width: 550px;
+  height: auto;
+}
+.bg-text {
+  font-size: 14vw;
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  text-align: center;
+}
+.bottle-side {
+  left: 5%;
+  max-width: 1vw;
+  
+  position: absolute;
+  z-index: 4;
+}
+
+.text-side {
+  right: 5%;
+  position: absolute;
+  z-index: 4;
+  font-size: 0.7rem;
+  max-width: 200px;
+  text-align: right;
+  word-wrap: break-word;
+}
+.text-top-right,
+.text-bottom-right {
+  position: absolute;
+  right: 1%;
+  font-size: 0.8rem;
+  color: white;
+  opacity: 0;
+  z-index: 1;
+  max-width: 200px;
+  text-align: left;
+}
+}

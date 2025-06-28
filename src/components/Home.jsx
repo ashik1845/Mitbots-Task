@@ -80,6 +80,13 @@ const Home = () => {
         </button>
       </div>
       
+      <div className="section-row">
+        <h1 className="section-heading">Parallax</h1>
+        <button className="see-button" onClick={() => navigate("/parallax")}>
+          See
+        </button>
+      </div>
+
     </div>
   );
 };

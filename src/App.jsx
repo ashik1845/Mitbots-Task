@@ -6,6 +6,7 @@ import Offerscroll from "./components/Offerscroll";
 import Object from "./components/Object";
 import Text from "./components/Text";
 import DiffCards from "./components/DiffCards"
+import  Parallax  from "./components/Parallax";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/object" element={<Object />} />
         <Route path="/text" element={<Text />} />
         <Route path="/diffcards" element={<DiffCards />} />
+         <Route path="/parallax" element={<Parallax />} />
       </Routes>
     </Router>
   );
