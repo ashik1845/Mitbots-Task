@@ -1,4 +1,4 @@
-// Parallax.jsx
+
 import React, { useEffect } from "react";
 import "../styles/Parallax.css";
 import gsap from "gsap";
@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import perfume1 from "../assets/perfume1.png";
 import perfume2 from "../assets/perfume2.png";
 import perfume3 from "../assets/perfume3.png";
-import perfume4 from "../assets/perfume4.png"; // You should have this image
+import perfume4 from "../assets/perfume4.png"; 
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -78,7 +78,7 @@ const Parallax = () => {
       "<"
     );
 
-    // ✅ Section 3
+    // Section 3
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".section-3",
@@ -90,7 +90,6 @@ const Parallax = () => {
     }
   });
 
-  // Step 1: Perfumes go to their corners
   tl.to(".perfume-3", {
     x: "-40vw",
     y: "-30vh",
@@ -103,7 +102,7 @@ const Parallax = () => {
     ease: "power2.inOut",
   }, 0);
 
-  // Step 2: Texts fade in aligned with perfume positions
+ 
   tl.to(".text-top-right", {
     opacity: 1,
     x: 0,
