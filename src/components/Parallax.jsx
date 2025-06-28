@@ -107,13 +107,13 @@ const Parallax = () => {
     opacity: 1,
     x: 0,
     ease: "power1.out",
-  }, ">0.3");
+  }, 0.2);
 
   tl.to(".text-bottom-right", {
     opacity: 1,
     x: 0,
     ease: "power1.out",
-  }, "<");
+  }, 0.2);
   }, []);
 
   return (
