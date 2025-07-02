@@ -7,6 +7,8 @@ import Object from "./components/Object";
 import Text from "./components/Text";
 import DiffCards from "./components/DiffCards"
 import  Parallax  from "./components/Parallax";
+import Carousel from "./components/Carousel";
+import Cursor from "./components/Cursor";
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
         <Route path="/text" element={<Text />} />
         <Route path="/diffcards" element={<DiffCards />} />
          <Route path="/parallax" element={<Parallax />} />
+          <Route path="/carousel" element={<Carousel />} />
+           <Route path="/cursor" element={<Cursor />} />
       </Routes>
     </Router>
   );

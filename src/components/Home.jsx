@@ -87,7 +87,21 @@ const Home = () => {
         </button>
       </div>
 
-    </div>
+<div className="section-row">
+        <h1 className="section-heading">Carousel</h1>
+        <button className="see-button" onClick={() => navigate("/carousel")}>
+          See
+        </button>
+      </div>
+
+      <div className="section-row">
+        <h1 className="section-heading">Cursor effect</h1>
+        <button className="see-button" onClick={() => navigate("/cursor")}>
+          See
+        </button>
+      </div>
+
+    </div>    
   );
 };
 

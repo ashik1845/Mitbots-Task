@@ -1,0 +1,44 @@
+.cursor-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cursor-heading {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.cursor-subtext {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+
+.cursor-smoke {
+  position: fixed;
+  pointer-events: none;
+  border-radius: 50%;
+  z-index: 9999;
+  animation: fadeOutSmoke 1.2s ease-out forwards;
+}
+
+
+@keyframes fadeOutSmoke {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3) translate(15px, -15px);
+    opacity: 0;
+  }
+}
